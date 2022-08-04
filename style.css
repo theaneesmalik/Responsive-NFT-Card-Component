@@ -60,7 +60,7 @@ body {
     border-radius: 10px;
     background-color: var(--cyan);
     position: absolute;
-    bottom: 250px;
+    bottom: 254px;
     display: none;
     opacity: 60%;
     cursor: pointer;
