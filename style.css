@@ -100,7 +100,7 @@ p {
 }
 
 .time {
-    color: var(--white);
+    color: var(--softBlue);
     display: flex;
     align-items: center;
 }
