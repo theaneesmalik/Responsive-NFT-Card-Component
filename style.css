@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Used */
+    --bodyBg: hsl(217, 54%, 11%);
+    /* Used */
+    --cardBg: hsl(216, 50%, 16%);
+    /* Used */
+    --lineBlue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    /* Used */
+    --marBot: 20px;
+}
+
+body {
+    background-color: var(--bodyBg);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    width: 284px;
+    padding: 25px;
+    background-color: var(--cardBg);
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.main>img {
+    width: 100%;
+    border-radius: 10px;
+    height: 55%;
+    margin-bottom: var(--marBot);
+
+}
+
+.main img:hover+.hover {
+    display: flex;
+}
+
+.outer svg {
+    margin-right: 5px;
+}
+
+.hover {
+    justify-content: center;
+    align-items: center;
+    width: 283px;
+    height: 283px;
+    border-radius: 10px;
+    background-color: var(--cyan);
+    position: absolute;
+    bottom: 250px;
+    display: none;
+    opacity: 60%;
+    cursor: pointer;
+}
+
+
+
+.main h1 {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: var(--marBot);
+}
+
+.main h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--softBlue);
+    margin-bottom: var(--marBot);
+}
+
+.outer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--marBot);
+}
+
+.price {
+    color: var(--cyan);
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    border-top: 1px solid var(--lineBlue);
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+
+}
+
+.profile>span {
+    color: var(--softBlue);
+    margin-left: 20px;
+}
+
+.name {
+    color: var(--white);
+}
+
+.name:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    width: 25px;
+}
+
+@media (max-width:400px){
+    .main {
+        width: 100%;
+        margin: 20px;
+    }
+}
